@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Acme&family=Paytone+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../stylesheets/index.css">
+    <title>Contacto</title>
+</head>
+<body>
+    <header>
+        <h1>Gabriel Flores Bardales</h1>
+    </header>
+    <nav>
+        <ul>
+            <li>
+                <a href="../index.html">Home</a>
+            </li>
+            <li>
+                <a href="../sections/portfolio.html">Portfolio</a>
+            </li>
+            <li>
+                <a href="../sections/about.html">About me</a>
+            </li>
+            <li>
+                <a href="../sections/contact.html">Contact me</a>
+            </li>
+            <li>
+                <a href="../sections/faq.html">FAQ</a>
+            </li>
+        </ul>
+    </nav>
+
+    <form class="contact_us">
+        <p> Comunícate con Gabriel </p>
+        <label for="name">Nombre:</label><br>
+        <input type=text" name="name" id ="name"><br>
+        <br>
+        <label for="email">Tu correo electrónico</label><br>
+        <input type="email" name="email" id="email"><br>
+        <br>
+        <label for="asunto">Asunto del mensaje:</label><br>
+        <select id="asunto" name="asunto">
+            <option value="jobOffer">I have a job to offer</option>
+            <option value="mentorRequest">Mentoring request for students</option>
+            <option value="miscTopics">Other miscellaneous topics</option>
+        </select> <br>
+
+        <input type="checkbox" id="dataBase" name="dataBase" value= "Data Base">
+        <label for="dataBase">Acepto incluir mis datos en una base de datos para noticias relacionadas a desarrollo web</label><br>
+        <br>
+        <label>Mensaje:</label><br>
+        <textarea name="mensaje" rows="10" cols="40"> 
+            Escribe tu mensaje
+        </textarea><br>
+        <br>
+        <input type="submit" value="Submit">
+        <input type="reset">
+    </form>
+    <br>
+    <footer>
+        <div>
+            <p>Siguenos en nuestras redes sociales</p>
+            <img src=../images/fb.svg>
+            <img src=../images/ig.png>
+            <img src=../images/twitter.png>
+        </div>
+        <div class="newsletter">
+            <p>
+                Suscríbete a nuestro newsletter:
+            </p>
+        
+        <form>
+            <input type="email" name="email">
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    </footer>
+</body>
+</html>
