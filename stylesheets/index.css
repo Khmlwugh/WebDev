@@ -18,9 +18,12 @@ header h1 {
 }
 
 nav{
-    position: sticky;
+    position: fixed;
     top: 0;
+    left: 0;
+    height: 100%;
 }
+/*
 nav ul{
     display:flex;
     height: 30px;
@@ -45,6 +48,7 @@ nav ul li:hover{
     background-color: white;
 }
 
+*/
 
 #container{
     display:grid;
