@@ -3,7 +3,13 @@
     padding: 0;
 }
 
-header h1 {
+body{
+    display: flex;
+    flex-direction: row;
+
+}
+
+div h1 {
     text-align: center;
     background-color: black;
     color: white;
@@ -18,10 +24,30 @@ header h1 {
 }
 
 nav{
+    display: flex;
+    flex-direction: column;
     position: fixed;
     top: 0;
     left: 0;
     height: 100%;
+    background-color: darkslateblue;
+    align-items: center;
+
+}
+
+nav ul{
+    list-style-type:none;
+}
+nav li{
+    font-size: 22px;
+    line-height: 40px;
+    text-align: center;
+    flex: auto ;
+    
+}
+
+nav a{
+    color: white;
 }
 /*
 nav ul{
@@ -50,93 +76,35 @@ nav ul li:hover{
 
 */
 
-#container{
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: 1fr auto auto auto;
+.main{
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr; 
+    gap: 0px 0px; 
     grid-template-areas: 
-    "item1 item1 item1"
-    "item2 item2 item2"
-    "item3 item4 item5"
-    "item6 item6 item6";
-    align-items: center;
-    background-color: black;
+      "Name Description"
+      "Name Description"
+      "Footer Footer"
+}
+
+.name{
+    background-color: white;
+    grid-area: Name;
+}
+
+.description{
+    grid-area: Description;
+
+}
+
+.footer{
+    grid-area: Footer;    
 }
 
 #item1{
-    grid-area: item1;
-    display:flex;
+    display: flex;
     flex-direction: row;
-    padding: 10px;
-    border: 15px black;
-    border-style: solid;
-    background-color: darkslategray;
-    align-items: center;
 }
-
-
-#item1 img{
-    width: 66%;
-    height: auto;
-}
-
-#item1 p{
-    width: 33%;
-    vertical-align: middle;
-    line-height: auto;
-    font-size: 32px;
-    font-family: 'Acme', sans-serif;
-    color: black;
-}
-
-#item2{
-    grid-area: item2;
-}
-
-#item3{
-    grid-area: item3;
-}
-
-#item4{
-    grid-area: item4;
-}
-
-#item5{
-    grid-area: item5;
-}
-
-#item6{
-    grid-area: item6;
-}
-
-
-.item {
-    margin-top:5px;
-    border: 2px solid black;
-    margin: 30px;
-    padding: 20px;
-    align-items: center;
-}
-
-section div img{
-    background: teal;
-    border: 20px black;
-    text-align: center;
-    vertical-align: middle;
-}
-
-section div {
-    color: rgb(49, 90, 109);
-    text-align: center;
-    vertical-align: middle;
-}
-
-#item4 #item5 #item6{
-    background: rgb(25, 178, 184);
-    text-align: center;
-    padding: 10px;
-}
-
 footer{
     display: flex;
     align-items: center;
